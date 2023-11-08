@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function print(from, to) {
+
+            const x = setInterval(() => {
+                if (from >to) {
+                    clearInterval(x);
+                }
+                else {
+                   // console.log(from++);
+                    document.writeln("<span  align='center' style='color:red;font-size:30px;'>"+from++ +"</span>");
+
+                }
+            }, 1000);
+        }
+
+        print(3, 10);
+    </script>
+
+
+
+
+<body>
+
+
+
+
+</body>
+
+</html>
